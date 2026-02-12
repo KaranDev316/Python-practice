@@ -2,13 +2,9 @@
 from random import seed
 
 #Counting unique characters in a given string
-s = 'abca'
-seen_char = ''
-count = 0
-for char in s:
-    if char not in seen_char:
-        seen_char += char
-        count += 1
-print(count)
 
+# Day 4 of 30 days of python
+
+challenge = 'Thirty days of python'
+print(challenge.count('y',7,14))
 
