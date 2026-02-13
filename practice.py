@@ -4,6 +4,9 @@ from random import seed
 
 
 # Day 4 of 30 days of python
-# concatenating strings
-print('Coding '  + 'For ' + 'All')
+# how to use len()
+
+company = "mahadev computers"
+
+print(len(company))
 
