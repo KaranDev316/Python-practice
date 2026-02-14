@@ -1,7 +1,6 @@
 # option + fn + F12 to open the terminal in mac
 
 # Day 4 of 30 days of python
-# how to use len()
 
 # Displaying using string formating
 
