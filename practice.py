@@ -1,11 +1,7 @@
 # option + fn + F12 to open the terminal in mac
 
-# Day 4 of 30 days of python
+# Day 5 of 30 days of python
 
-# Displaying using string formating
-
-radius = 10
-
-area = 3.14 * radius ** 2
-
-print(f"The area of the circle with radius {radius} is {area}")
+# how to creater list
+lst = ['karan','licka']
+print(len(lst))
