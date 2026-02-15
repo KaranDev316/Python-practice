@@ -4,7 +4,8 @@
 
 # how to checking if item exist list
 lst = ['karan','licka']
-lst[0] = 'Alfred'
-does_exist = 'karan' in lst
-print(does_exist)
+
+lst.append('Alfred')
+
+print(lst)
 
