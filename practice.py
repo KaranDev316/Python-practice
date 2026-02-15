@@ -2,7 +2,9 @@
 
 # Day 5 of 30 days of python
 
-# how to modify  list
+# how to checking if item exist list
 lst = ['karan','licka']
 lst[0] = 'Alfred'
-print(lst)
+does_exist = 'karan' in lst
+print(does_exist)
+
