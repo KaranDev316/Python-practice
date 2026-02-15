@@ -1,11 +1,11 @@
 # option + fn + F12 to open the terminal in mac
 
 # Day 5 of 30 days of python
-
+# list can be removed by using remove(), pop(), del(), clear() => making the list empty
 # how to checking if item exist list
-lst = ['karan','licka']
+lst = ['karan','licka', 'Mango', 'lemon']
 
-lst.insert(4,'Alfred')
+lst.clear()
 
 print(lst)
 
