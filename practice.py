@@ -2,6 +2,6 @@
 
 # Day 5 of 30 days of python
 
-# how to creater list
+# how to slice  list
 lst = ['karan','licka']
-print(len(lst))
+print(lst[1:2])
