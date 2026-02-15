@@ -2,6 +2,7 @@
 
 # Day 5 of 30 days of python
 
-# how to slice  list
+# how to modify  list
 lst = ['karan','licka']
-print(lst[1:2])
+lst[0] = 'Alfred'
+print(lst)
