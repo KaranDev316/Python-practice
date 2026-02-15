@@ -5,7 +5,7 @@
 # how to checking if item exist list
 lst = ['karan','licka']
 
-lst.append('Alfred')
+lst.insert(4,'Alfred')
 
 print(lst)
 
