@@ -1,11 +1,13 @@
 # option + fn + F12 to open the terminal in mac
 
 # Day 5 of 30 days of python
-# list can be removed by using remove(), pop(), del(), clear() => making the list empty
-# how to check if item exist list
-lst = ['karan','licka', 'Mango', 'lemon']
-
-lst.clear()
-
+# How to sort and array
+lst = [10,5,11,2,22]
+lst.sort()
+lst.reverse()
 print(lst)
+
+
+
+
 
