@@ -4,7 +4,11 @@
 # How to sort and array
 lst = [10,5,11,2,22]
 for i in lst:
-    print(i)
+    if i % 2 == 0:
+        lst.remove(i)
+
+print(lst)
+
 
 
 
