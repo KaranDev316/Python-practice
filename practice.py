@@ -2,12 +2,18 @@
 
 # Day 5 of 30 days of python
 # How to sort and array
-lst = [10,5,11,2,22]
-for i in lst:
-    if i % 2 == 0:
-        lst.remove(i)
+lst = []
+number = int(input("Enter a number: "))
+for i in range(1, number + 1):
+     num = int(int(input("Enter a number: ")))
+     lst.append(num)
 
 print(lst)
+
+
+
+
+
 
 
 
