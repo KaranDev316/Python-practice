@@ -1,7 +1,7 @@
 # option + fn + F12 to open the terminal in mac
 
-# Day 5 of 30 days of python
-# How to sort and array
+# Day 6 of 30 days of python
+#
 lst = []
 number = int(input("Enter a number: "))
 for i in range(1, number + 1):
