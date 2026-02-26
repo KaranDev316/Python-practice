@@ -4,8 +4,8 @@
 st = {'item1','item2','item3'}
 
 
-print('item1' in st)
-
+st.add('item4')
+print(st)
 
 
 
