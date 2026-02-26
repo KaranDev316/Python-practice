@@ -4,7 +4,7 @@
 st = {'item1','item2','item3'}
 
 
-print(len(st))
+print('item1' in st)
 
 
 
