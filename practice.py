@@ -4,7 +4,7 @@
 st = {'item1','item2','item3'}
 
 print(st)
-st.pop()
+st.clear()
 print(st)
 
 
