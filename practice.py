@@ -4,7 +4,8 @@
 st = {'item1','item2','item3'}
 
 
-st.add('item4')
+
+st.remove('item1')
 print(st)
 
 
