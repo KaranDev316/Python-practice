@@ -3,5 +3,5 @@
 # Day 8 of python
 
 dct = {'first_name':'john', 'last_name':'doe'}
-dct['age'] = 25
-print(dct)
+dct['first_name'] = 'alfred'
+print(dct['first_name'])
