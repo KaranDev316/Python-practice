@@ -4,5 +4,5 @@
 
 dct = {'first_name':'john', 'last_name':'doe'}
 
-print('first_name' in dct)
-print('AGE' in dct)
+dct.pop('first_name')
+print(dct)
