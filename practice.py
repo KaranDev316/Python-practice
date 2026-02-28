@@ -2,4 +2,5 @@
 
 # Day 8 of python
 
-
+dct = {}
+print(type(dct))
