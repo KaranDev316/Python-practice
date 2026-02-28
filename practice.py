@@ -5,5 +5,4 @@
 dct = {'first_name':'john', 'last_name':'doe'}
 dct_copy = dct.copy()
 
-print(dct_copy)
-print(dct)
+keys = dct.keys()
