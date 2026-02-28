@@ -4,5 +4,5 @@
 
 dct = {'first_name':'john', 'last_name':'doe'}
 
-dct.pop('first_name')
+dct.clear()
 print(dct)
