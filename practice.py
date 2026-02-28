@@ -4,4 +4,4 @@
 
 dct = {'first_name':'john', 'last_name':'doe'}
 print(dct)
-print(dct['first_name'])
+print(len(dct))
