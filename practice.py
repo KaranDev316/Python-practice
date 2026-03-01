@@ -2,10 +2,11 @@
 
 # Day 9 of python
 age = int(input("enter your age: "))
-if age >= 18:
-    print("You are old enough to drive")
+if age > 21:
+    print(f" you are {age - 21} years older than me")
 else:
-    print(f"You need {18-age} years to drive")
+    print(f"I am {21-age} years older than you")
+
 
 
 
