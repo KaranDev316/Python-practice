@@ -1,9 +1,10 @@
 # option + fn + F12 to open the terminal in mac
 
 # Day 9 of python
-a = 3
-if a > 0:
-    if a < 5:
-        print("a is in between 1 and 5")
+age = int(input("enter your age: "))
+if age >= 18:
+    print("You are old enough to drive")
+else:
+    print("You are not old enough to drive")
 
 
