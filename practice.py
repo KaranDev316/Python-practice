@@ -1,11 +1,14 @@
 # option + fn + F12 to open the terminal in mac
 
 # Day 9 of python
-age = int(input("enter your age: "))
-if age > 21:
-    print(f" you are {age - 21} years older than me")
+
+number1 = int(input("enter number 1: "))
+number2 = int(input("enter number 2: "))
+
+if number1 > number2:
+     print(f"{number1} is greater than  {number2}")
 else:
-    print(f"I am {21-age} years older than you")
+     print(f"{number2} is greater than  {number1}")
 
 
 
