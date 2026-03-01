@@ -5,6 +5,7 @@ age = int(input("enter your age: "))
 if age >= 18:
     print("You are old enough to drive")
 else:
-    print("You are not old enough to drive")
+    print(f"You need {18-age} years to drive")
+
 
 
