@@ -2,9 +2,10 @@
 
 # Day 10 of python
 
-for i in range(8):
-     for j in range(8):
-        print(i * j)
+lst =  ['Python', 'Numpy','Pandas','Django', 'Flask']
+
+for i in lst:
+    print(i)
 
 
 
