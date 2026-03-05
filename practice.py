@@ -4,10 +4,10 @@
 
 #creating functions
 
-def main():
-    print("hello world")
+def main(x, y):
+     print(x * y)
 
-main()
+main(5, 6)
 
 
 
