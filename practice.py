@@ -12,4 +12,4 @@ def sum_numbers(num1):
         sum += i
     print(sum)
 
-sum_numbers(10)
+sum_numbers(100)
