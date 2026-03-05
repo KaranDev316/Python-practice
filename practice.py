@@ -6,10 +6,10 @@ import math
 
 #creating functions
 
-def area_of_circle(radius):
-    print("the area of circle is {}".format(math.pi * radius**2))
+def remove_item(lst, item):
+    lst.remove(item)
+    return lst
 
-area_of_circle(5)
-
+print(remove_item([2,3,4,5], 5))
 
 
