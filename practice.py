@@ -1,3 +1,3 @@
-number_string = "50"
-number = int(number_string)
-print(number)
+number = 100
+number_string = str(number)
+print(number_string)
