@@ -1,2 +1,3 @@
 text = " python is fun "
-print(text.strip())
+replaced = text.replace("fun", "awesome")
+print(replaced)
