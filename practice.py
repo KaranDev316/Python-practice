@@ -1,6 +1,5 @@
-price = int(input("Enter your price: "))
-tax = 10
+print(0.1 + 0.2)
 
-tax_calculation = price * tax/100
-final_price =price + tax_calculation
-print("Final: ", final_price)
+x = 0.1 + 0.2
+y = 0.3
+print(x == y)
