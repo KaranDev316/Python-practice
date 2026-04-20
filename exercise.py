@@ -46,6 +46,6 @@ def decode_secret_message(url):
         print(" ".join(row))
 
 
-# Run the function
+
 url = "https://docs.google.com/document/d/e/2PACX-1vSvM5gDlNvt7npYHhp_XfsJvuntUhq184By5xO_pA4b_gCWeXb6dM6ZxwN8rE6S4ghUsCj2VKR21oEP/pub"
 decode_secret_message(url)
