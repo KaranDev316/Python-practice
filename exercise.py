@@ -43,7 +43,7 @@ def decode_secret_message(url):
     # Print the grid (printing row by row)
     # If the message looks upside down, use reversed(grid)
     for row in reversed(grid):
-        print("".join(row))
+        print(" ".join(row))
 
 
 # Run the function
