@@ -1,14 +1,8 @@
-number1 = 2
-number2 = 3
-print("Before  swapping two numbers")
+#binary
+print(0b10)
 
-print("number 1 = ",number1)
-print("number 2 = ",number2)
+#octal
+print(0o10)
 
-number1 = number1 + number2
-number2 =  number1 - number2
-number1 = number1 - number2
-
-print("AFTER swapping two numbers")
-print("number 1 = ",number1)
-print("number 2 = ",number2)
+#hexa
+print(0x10)
