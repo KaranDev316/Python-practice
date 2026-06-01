@@ -1,8 +1,7 @@
-#binary
-print(0b10)
+#adding two digits number from the user
 
-#octal
-print(0o10)
+number_1 = int(input("Enter the first number: "))
+number_2 = int(input("Enter the second number: "))
 
-#hexa
-print(0x10)
+
+print("sum of two numbers = ",number_1 + number_2)
