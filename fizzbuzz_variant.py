@@ -1,5 +1,9 @@
 
-for i in range(1,51):
+
+start_point = int(input("Enter the starting point: "))
+end_point = int(input("Enter the ending point: "))
+
+for i in range(start_point, end_point+1):
     if i % 3 == 0 and i % 5 == 0:
         print("FizzBuzz")
 
