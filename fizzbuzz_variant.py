@@ -3,7 +3,7 @@
 start_point = int(input("Enter the starting point number: "))
 end_point = int(input("Enter the ending point number: "))
 
-if start_point < end_point:
+if start_point <= end_point:
     for i in range(start_point, end_point+1):
         if i % 3 == 0 and i % 5 == 0:
             print("FizzBuzz")
@@ -17,10 +17,6 @@ if start_point < end_point:
 else:
     print("Starting point number can not be greater than ending point number")
 
-#VALIDATION TO PUT
-#WHAT HAPPENS IF THE USER ENTERS STARTING POINT 50 END POINT 1
-#
-#
-#
-#
+
+#Can I move the FizzBuzz logic into a function so that I can call it with different ranges without duplicating code?"
 
