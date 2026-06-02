@@ -1,17 +1,26 @@
 
 
-start_point = int(input("Enter the starting point: "))
-end_point = int(input("Enter the ending point: "))
+start_point = int(input("Enter the starting point number: "))
+end_point = int(input("Enter the ending point number: "))
 
-for i in range(start_point, end_point+1):
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz")
+if start_point < end_point:
+    for i in range(start_point, end_point+1):
+        if i % 3 == 0 and i % 5 == 0:
+            print("FizzBuzz")
 
-    elif i%3==0:
-        print("Fizz")
-    elif i%5==0:
-        print("Buzz")
-    else:
-        print(i)
+        elif i%3==0:
+            print("Fizz")
+        elif i%5==0:
+            print("Buzz")
+        else:
+            print(i)
+else:
+    print("Starting point number can not be greater than ending point number")
 
+#VALIDATION TO PUT
+#WHAT HAPPENS IF THE USER ENTERS STARTING POINT 50 END POINT 1
+#
+#
+#
+#
 
