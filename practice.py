@@ -1,7 +1,8 @@
-#adding two digits number from the user
+#BMI CALCULATOR
 
-number_1 = int(input("Enter the first number: "))
-number_2 = int(input("Enter the second number: "))
+weight = int(input("Enter your weight: "))
+height = int(input("Enter your height: "))
 
+bmi = weight / (height ** 2)
 
-print("sum of two numbers = ",number_1 + number_2)
+print(bmi)
