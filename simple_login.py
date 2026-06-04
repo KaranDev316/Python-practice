@@ -1,5 +1,6 @@
 defined_username = "admin"
 defined_password = "abc123"
+is_authenticated = False
 
 for i in range(1,4):
     print("Attempt " + str(i) +" of 3")
@@ -8,7 +9,15 @@ for i in range(1,4):
     password = input("Please enter your password: ")
     if username == defined_username and password == defined_password:
         print("Welcome, {}!".format(username))
+        is_authenticated = True
         break
     else:
         if i == 3:
             print("You have reached the maximum limit of 3 attempts")
+if is_authenticated:
+   change_password = input("You want to change password?: ")
+   if change_password.lower() == "yes":
+       new_password = input("Please enter your new password: ")
+       defined_password =new_password
+   else:
+       print("You can change it later")
