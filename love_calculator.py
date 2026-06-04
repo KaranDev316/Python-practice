@@ -1,8 +1,8 @@
-first_fullname = input("Please enter your first name: ").lower()
-second_fullname = input("Please enter your last name: ").lower()
+your_fullname = input("Please enter your  name: ").lower()
+partners_fullname = input("Please enter your partner's name: ").lower()
 
 #count the number presence of both names  in true
-both_names = first_fullname +second_fullname
+both_names = your_fullname + partners_fullname
 t_count = both_names.count("t")
 r_count = both_names.count("r")
 u_count = both_names.count("u")
@@ -17,5 +17,14 @@ v_count = both_names.count("v")
 e_count = both_names.count("e")
 
 love_count = l_count + o_count + v_count + e_count
+score  = int(str(true_count) + str(love_count))
 
-print("Your matching score is "+ str(true_count) + str(love_count) + "%")
+print("Your matching score is "+ str(score) + "%")
+
+if score <= 40:
+    print("low score")
+elif score >= 50:
+    print("Middle range score")
+elif score >= 70:
+    print("High score")
+
