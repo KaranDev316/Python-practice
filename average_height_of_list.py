@@ -5,6 +5,6 @@ length = len(marks)
 
 for mark in marks:
     sum += int(mark)
+average = sum / length
 
-print(sum)
-print(length)
+print(f"The average of total marks is {round(average)}")
