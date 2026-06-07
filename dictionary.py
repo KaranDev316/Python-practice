@@ -1,24 +1,17 @@
+student_data = [
+    {
+     "name" : "Ram",
+     "roll_no" : 10,
+     "age" : 20,
+     "course" : "Python",
 
-student_mark = {
-    "alfred" : 93,
-    "bob": 40,
-    "karan": 50
-}
+    }
+    ,{
+     "name" : "Mohan",
+     "roll_no" : 20,
+     "age" : 22,
+     "course" : "Java",
 
-for name, value in student_mark.items():
-    if value > 90:
-        value = "A+"
-    elif value > 80:
-        value = "A"
-    elif value > 70:
-        value = "B+"
-    elif value > 60:
-        value = "B"
-    elif value > 50:
-        value = "C"
-    elif value > 40:
-        value = "D"
-    elif value > 30:
-        value = "F"
-    print(f"{name}: {value}")
-
+     }
+]
+print(student_data)
