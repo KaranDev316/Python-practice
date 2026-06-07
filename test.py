@@ -1,6 +1,5 @@
-count = 0
-yourname = "friendship"
-for i in "alfred":
-    count +=yourname.count(i)
-print(count)
-
+nums = [4, 2, 9, 1, 7]
+maximum = 0
+for number in nums:
+    if number > maximum:
+        maximum = number
