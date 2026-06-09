@@ -1,5 +1,11 @@
-nums = [4, 2, 9, 1, 7]
-maximum = 0
-for number in nums:
-    if number > maximum:
-        maximum = number
+#scope in python
+
+def outer():
+     x = 10
+     def inner():
+          def inner_inner():
+               return x
+          return inner_inner()
+     return inner()
+result = outer()
+print(result)
