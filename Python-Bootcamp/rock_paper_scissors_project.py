@@ -8,11 +8,11 @@ if user_choice == "rock" or user_choice == "paper" or user_choice == "scissors":
     if user_choice == computer_choice:
         print("Draw")
     elif user_choice == "rock" and computer_choice == "scissors":
-        print("You won")
+        print("YOU WON")
     elif user_choice == "scissors" and computer_choice == "paper":
-        print("You won")
+        print("YOU WON")
     elif user_choice == "paper" and computer_choice == "rock":
-        print("you won")
+        print("YOU WON")
     else:
         print("YOU LOSE!")
 else:
