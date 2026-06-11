@@ -4,7 +4,9 @@ user_choice = input("Enter your choice(Rock/Paper/Scissors): ").lower()
 choices = ["rock","paper","scissors"]
 
 computer_choice = random.choice(choices)
-if user_choice == "rock" or user_choice == "paper" or user_choice == "scissors":
+print(f"computer choice = {computer_choice}")
+print(f"Your choice = {user_choice}")
+if user_choice in choices:
     if user_choice == computer_choice:
         print("Draw")
     elif user_choice == "rock" and computer_choice == "scissors":
