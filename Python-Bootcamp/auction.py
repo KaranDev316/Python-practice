@@ -1,3 +1,4 @@
+import os
 print("Welcome to the silent auction program!")
 names = []
 amounts = []
@@ -10,6 +11,10 @@ while bidders:
     bidder = input("Are there any bidders? Type 'yes' or 'no' ")
     if bidder.lower() == "no":
         bidders = False
+    elif bidder.lower() == "yes":
+        os.system("clear")
+
+
 
 max_amount = amounts[0]
 position = 0
