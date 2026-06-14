@@ -12,7 +12,7 @@ while bidders:
     if bidder.lower() == "no":
         bidders = False
     elif bidder.lower() == "yes":
-        os.system("clear")
+        os.system("clear") # depend on terminal compatibility
 
 
 
