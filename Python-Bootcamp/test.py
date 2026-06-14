@@ -1,16 +1,8 @@
+x = []
 
-x = 100
+def add():
+    x.append(1)
 
-def outer():
+add()
 
-    x = 50
-
-    def inner():
-        nonlocal x
-        print(x)
-
-        x = 10
-
-    inner()
-
-outer()
+print(x)
