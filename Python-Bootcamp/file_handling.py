@@ -1,4 +1,4 @@
-file_one = open("test.txt","w")
+file_one = open("test.txt","r")
 
-file_one.write("Hello World")
 
+print(file_one.read())
