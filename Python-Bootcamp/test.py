@@ -20,4 +20,4 @@ class BankAccount:
 
 alfred = BankAccount(100)
 
-alfred.withdraw(990)
+print(f"Your account balance is {alfred.get_balance()}")
