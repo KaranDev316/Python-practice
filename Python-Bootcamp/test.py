@@ -1,9 +1,16 @@
-class Student:
-    def study(self):
-        print("studying....")
+class Car:
+    pass
 
-alfred = Student()
-martin = Student()
+kia = Car()
+toyota = Car()
 
-alfred.study()
-martin.study()
+kia.name = "seltos"
+toyota.name = "cruiser"
+
+kia.brand = "kia"
+toyota.brand = "toyota"
+
+print(kia.name)
+print(toyota.name)
+print(kia.brand)
+print(toyota.brand)
