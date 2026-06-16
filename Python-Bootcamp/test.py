@@ -19,5 +19,5 @@ class BankAccount:
 
 
 alfred = BankAccount(100)
-alfred.deposit(100)
-#alfred.withdraw(1990)
+
+alfred.withdraw(90)
