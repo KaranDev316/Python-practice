@@ -9,7 +9,7 @@ class BankAccount:
         print(f"You have received ${amount}  and your balance is ${self.balance}")
 
     def withdraw(self,amount):
-        if amount < self.balance:
+        if amount <= self.balance:
             self.balance -= amount
             print(f"You have withdrawn ${amount}  and your balance is ${self.balance}")
         else:
