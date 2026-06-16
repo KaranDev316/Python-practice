@@ -1,10 +1,23 @@
-class Car:
-    def car_details(_,color, brand):
-        print(f"The brand of the car is {brand} and the color is {color}")
+#exercise 4: Bank Account
 
-car1 = Car()
-car2 = Car()
+class BankAccount:
+    def __init__(self,balance):
+        self.balance = balance
 
-car1.car_details("red","Kia")
-car2.car_details("blue","Toyota")
+    def deposit(self,amount):
+        self.balance += amount
+        print(f"You have received ${amount}  and your balance is ${self.balance}")
 
+    def withdraw(self,amount):
+        if amount < self.balance:
+            self.balance -= amount
+            print(f"You have withdrawn ${amount}  and your balance is ${self.balance}")
+        else:
+            print(f"Sorry, you have insufficient balance")
+    def get_balance(self):
+        return self.balance
+
+
+alfred = BankAccount(100)
+alfred.deposit(100)
+#alfred.withdraw(1990)
