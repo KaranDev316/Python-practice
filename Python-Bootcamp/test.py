@@ -1,16 +1,9 @@
-class Car:
-    pass
+class Student:
+    def study(self):
+        print("studying....")
 
-    def name_car(self, name):
-        self.name = name
-        print(f"This is my {name}")
+alfred = Student()
+martin = Student()
 
-# Your code here
-car1 = Car()
-car2 = Car()
-
-
-print(car1.name_car("mahindra"))
-print(car2.name_car("Toyota"))
-
-# Output should show three DIFFERENT memory addresses
+alfred.study()
+martin.study()
