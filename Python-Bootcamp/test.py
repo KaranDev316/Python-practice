@@ -1,16 +1,12 @@
 class Car:
-    pass
+    def car_details(self,color, brand):
+        self.brand = brand
+        self.color = color
+        print(f"The brand of the car is {self.brand} and the color is {self.color}")
 
-kia = Car()
-toyota = Car()
+car1 = Car()
+car2 = Car()
 
-kia.name = "seltos"
-toyota.name = "cruiser"
+car1.car_details("red","Kia")
+car2.car_details("blue","Toyota")
 
-kia.brand = "kia"
-toyota.brand = "toyota"
-
-print(kia.name)
-print(toyota.name)
-print(kia.brand)
-print(toyota.brand)
