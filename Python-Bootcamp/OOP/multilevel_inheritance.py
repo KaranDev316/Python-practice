@@ -11,4 +11,7 @@ class Child(Parent):
         print("Child work")
 
 alfred = Child()
+
+GrandParent.work(alfred)
+Parent.work(alfred)
 alfred.work()
