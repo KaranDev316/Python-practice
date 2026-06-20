@@ -1,7 +1,6 @@
-my_list = [1,2,3,4,5,6,7,8,9]
-search = int(input("Enter your search term: "))
-
-if search in my_list:
-    print("found")
-else:
-    print("not found")
+def add_list(list=[]):
+    list.append(1)
+    return list
+print(add_list())
+print(add_list())
+print(add_list())
