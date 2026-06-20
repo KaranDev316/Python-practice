@@ -1,4 +1,6 @@
 def get_args(*args):
     print(args)
-
-get_args(1, 2, 3, 4, 5)
+list1 = []
+for i in range(5):
+    list1.append("*")
+    get_args(list1)
