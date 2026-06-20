@@ -1,4 +1,8 @@
-def get_args():
-    pass
+x = 10
 
-print(type(get_args()))
+def change():
+    global x
+    x = 20
+
+
+print(x)
