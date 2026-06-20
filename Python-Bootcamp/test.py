@@ -1,4 +1,3 @@
-file = open("test.txt","r")
-
-print(file.read())
-file.close()
+with open("test.txt","a") as file:
+    file = file.write("user logged in")
+    print(file)
