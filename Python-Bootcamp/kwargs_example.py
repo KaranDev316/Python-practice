@@ -1,6 +1,10 @@
-def get_dict(**kwargs):
+def greet(name="Guest", **kwargs):
+    print(name)
     print(kwargs)
-get_dict(
-    name="ram",
-    age=20
-)
+
+data = {
+    "country": "Malawi",
+    "city": "Lilongwe"
+}
+
+greet("Alfred", **data)
