@@ -1,5 +1,4 @@
 
-
 start_point = int(input("Enter the starting point number: "))
 end_point = int(input("Enter the ending point number: "))
 

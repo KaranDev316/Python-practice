@@ -1,12 +1,17 @@
-class Human:
-    def work(self):
-        print("Human is working")
-class Male:
-    def work(self):
-        print("Male is working")
+class Animal:
+    def eat(self):
+        print("Eating from animal")
+class Dog(Animal):
+    def eat(self):
+        print("Eating from dog")
+class Cat(Animal):
+    def eat(self):
+        print("Eating from cat")
+class Bird(Animal):
+    def eat(self):
+        print("Eating from bird")
 
-class Boy(Human,Male):
-    pass
-boy = Boy()
-boy.work() #print Human is working
-Male.work(boy) #print Male is working
+animal = Animal()
+animal.eat()
+dog = Dog()
+dog.eat()
