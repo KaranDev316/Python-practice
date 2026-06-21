@@ -1,3 +1,3 @@
 import test
 
-print(test)
+print(type(test))
