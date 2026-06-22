@@ -1,1 +1,3 @@
-print(__name__ == "test")
+list1 = [1,2]
+list1 *= 2
+print(list1)
