@@ -1,7 +1,7 @@
 
 try:
     items = [1, 2, 3]
-    print(items[1])  # Triggering an IndexError
+    print(items[11])  # Triggering an IndexError
 
 except IndexError:
     print("That item is not in the list")
