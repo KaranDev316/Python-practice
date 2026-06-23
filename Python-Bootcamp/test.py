@@ -4,3 +4,4 @@ try:
     print(division)
 except Exception as e:
     print(e)
+    e = None
