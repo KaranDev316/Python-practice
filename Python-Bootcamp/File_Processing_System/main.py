@@ -9,28 +9,27 @@ Please enter your choice as it is.
 list1 = []
 #if file_name == "Good text":
 with open("sample_good.txt","r") as file:
-        list1 = [int(line) for line in file]
-print(type(list1))
-print(list1)
+    list1 = [int(line) for line in file]
 
-sum_numbers = 0
-max_number  = list1[0]
-min_number = list1[0]
+def calculate_statistics(list1):
+    sum_numbers = 0
+    max_number = list1[0]
+    min_number = list1[0]
+    for i in list1:
+        sum_numbers = sum_numbers + i
 
-for i in list1:
-    sum_numbers = sum_numbers + i
+    for i in range(0,len(list1)):
+        if list1[i] > max_number:
+            max_number = list1[i]
+        if list1[i] < min_number:
+            min_number = list1[i]
 
-for i in range(0,len(list1)):
-    if list1[i] > max_number:
-        max_number = list1[i]
-    if list1[i] < min_number:
-        min_number = list1[i]
+    average = sum_numbers/len(list1)
+    return sum_numbers,average, max_number, min_number
 
-average = sum_numbers/len(list1)
+print(f"Sum: {calculate_statistics(list1)[0]}")
+print(f"Average: {calculate_statistics(list1)[1]}")
+print(f"Max: {calculate_statistics(list1)[2]}")
+print(f"Min: {calculate_statistics(list1)[3]}")
 
 
-
-print(sum_numbers)
-print(average)
-print(max_number)
-print(min_number)
