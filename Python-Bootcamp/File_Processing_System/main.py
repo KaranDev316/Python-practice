@@ -5,9 +5,32 @@ Files available to process:
 Please enter your choice as it is.
 
 """)
-file_name = input("Enter file name: ")
+#file_name = input("Enter file name: ")
+list1 = []
+#if file_name == "Good text":
+with open("sample_good.txt","r") as file:
+        list1 = [int(line) for line in file]
+print(type(list1))
+print(list1)
 
-if file_name == "Good text":
-        with open("sample_good.txt","r") as f:
-            print(f.read())
+sum_numbers = 0
+max_number  = list1[0]
+min_number = list1[0]
 
+for i in list1:
+    sum_numbers = sum_numbers + i
+
+for i in range(0,len(list1)):
+    if list1[i] > max_number:
+        max_number = list1[i]
+    if list1[i] < min_number:
+        min_number = list1[i]
+
+average = sum_numbers/len(list1)
+
+
+
+print(sum_numbers)
+print(average)
+print(max_number)
+print(min_number)
