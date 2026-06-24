@@ -1,9 +1,7 @@
-from types import NoneType
 
 print("""Welcome to the File Processing System
 Files available to process:
 1. Good text
-2. Bad text
 Please enter your choice as it is.
 
 """)
@@ -38,15 +36,23 @@ def calculate_statistics(list1):
         average = sum_numbers / len(list1)
         return sum_numbers, average, max_number, min_number
     except ZeroDivisionError:
-        print("Please enter a number")
+        print("Please enter number")
     except UnboundLocalError:
         print("Please enter a number")
 try:
-    print(f"Sum: {calculate_statistics(list1)[0]}")
-    print(f"Average: {calculate_statistics(list1)[1]}")
-    print(f"Max: {calculate_statistics(list1)[2]}")
-    print(f"Min: {calculate_statistics(list1)[3]}")
+    with open("report.txt","w") as file:
+        file.write("Report \n")
+        file.write("______ \n")
+        file.write("Sum: " + str(calculate_statistics(list1)[0]) + "\n")
+        file.write("Average: " + str(calculate_statistics(list1)[1]) + "\n")
+        file.write("Max: " + str(calculate_statistics(list1)[2]) + "\n")
+        file.write("Min: " + str(calculate_statistics(list1)[3]) + "\n")
 except Exception as e:
     print(e)
+else:
+   print("Program finished please check the report.txt file")
+
+
+
 
 
