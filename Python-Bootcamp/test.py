@@ -1,6 +1,9 @@
-left = 1_500_000_000
-right = 1_500_000_000_000
+arr = ["apple", "banana", "cherry"]
 
-print(left,right)
+for i, _ in enumerate(arr):
+    print(i)
+
+
+
 
 
