@@ -1,6 +1,4 @@
 names = ["John", "Michael", "David"]
-name_copy = []
-for name in names:
-    name_copy.append(name)
+name_copy = [name for name in names]
 
 print(name_copy)
