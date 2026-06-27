@@ -1,4 +1,7 @@
-names = ["John", "Michael", "David"]
-name_copy = [name for name in names if name != "John"]
+animals = ["lion", "tiger", "monkey", "elephant", "frog"]
+filtered_animals = []
 
-print(name_copy)
+for animal in animals:
+    filtered_animals.append(animal.title())
+
+print(filtered_animals)
