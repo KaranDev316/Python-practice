@@ -4,7 +4,9 @@ cities_in_C = {key: round((value -32) *(5/9)) for key, value in cities_in_F.item
 print(cities_in_C)
 
 #Withought Dictionary comprehension it will look like this
-
+dict_2 = {}
 for key, value in cities_in_C.items():
     value = round((value -32) *(5/9))
-    print(key, value)
+    dict_2[key] = value
+
+print(dict_2)
