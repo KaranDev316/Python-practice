@@ -1,4 +1,5 @@
-def average(numbers: list[int]) -> float:
-    return sum(numbers) / len(numbers)
-
-print(average([1, 2, 3, 4]))
+def load_user()->dict[str,list[int]]:
+    return{
+        "Alice": [1,2],
+        "Bob": [3]
+    }
