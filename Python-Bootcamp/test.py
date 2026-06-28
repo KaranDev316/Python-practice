@@ -1,6 +1,6 @@
-def add(a:int, b:int) -> int:
-    return a + b
+from typing import Any
 
-read = add("hello", "world")
+x: Any = ()
 
-print(read)
+print(type(x))
+
