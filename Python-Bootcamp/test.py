@@ -1,4 +1,4 @@
-def add(a:int, b:int) -> int:
-    return a + b
+def average(numbers: list[int]) -> float:
+    return sum(numbers) / len(numbers)
 
-print(add(1, 2))
+print(average([1, 2, 3, 4]))
