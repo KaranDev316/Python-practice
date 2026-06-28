@@ -1,6 +1,4 @@
-from typing import Any
+def add(a:int, b:int) -> int:
+    return a + b
 
-x: Any = ()
-
-print(type(x))
-
+print(add(1, 2))
