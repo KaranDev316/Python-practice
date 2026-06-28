@@ -1,9 +1,6 @@
-arr = ["apple", "banana", "cherry"]
+def add(a:int, b:int) -> int:
+    return a + b
 
-for i, _ in enumerate(arr):
-    print(i)
+read = add("hello", "world")
 
-
-
-
-
+print(read)
