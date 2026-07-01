@@ -2,10 +2,9 @@ from fastapi import FastAPI
 
 app = FastAPI()
 items = [
-    {"id": 1, "name": "item 1"},
-    {"id": 2, "name": "item 2"},
-    {"id": 3, "name": "item 3"},
-
+    {"id": 1, "name": "Issue 1", "status": "open"},
+    {"id": 2, "name": "Issue 2", "status": "closed"},
+    {"id": 3, "name": "Issue 3", "status": "in progress"},
 ]
 @app.get("/")
 def read_root():
