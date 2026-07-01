@@ -15,3 +15,6 @@ def read_root():
 @app.get("/items")
 def read_items():
     return {"items": items}
+@app.post("/items/insert")
+def create_items():
+    return {"items": items}
