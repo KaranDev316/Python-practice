@@ -1,5 +1,12 @@
-student_scores = { 'Tom': 85, 'Serena': 92, 'Alex': 78, 'Nina': 88 }
 
-# printing the key - value pairs
-for student, score in student_scores.items():
-    print(f"{student}: {score}")
+employee_records = [
+    {"role": "developer", "salary": 25_000},
+    {"role": "HR", "salary": 20_000},
+    {"role": "Finance", "salary": 35_000},
+]
+
+for record in employee_records:
+   if record["role"] == "developer":
+      bonus = 25_000 * 0.1
+      record["salary"] += bonus
+      print(record)
