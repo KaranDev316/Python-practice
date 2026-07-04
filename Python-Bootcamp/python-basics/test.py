@@ -1,12 +1,5 @@
 
-employee_records = [
-    {"role": "developer", "salary": 25_000},
-    {"role": "HR", "salary": 20_000},
-    {"role": "Finance", "salary": 35_000},
-]
+set1 = [1,2,3,4,4,5]
 
-for record in employee_records:
-   if record["role"] == "developer":
-      bonus = record["salary"] * 0.1
-      record["salary"] += bonus
-      print(record)
+for i in range(len(set1)-1, -1 ,-1):
+    print(i)
