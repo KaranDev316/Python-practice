@@ -7,6 +7,6 @@ employee_records = [
 
 for record in employee_records:
    if record["role"] == "developer":
-      bonus = 25_000 * 0.1
+      bonus = record["salary"] * 0.1
       record["salary"] += bonus
       print(record)
