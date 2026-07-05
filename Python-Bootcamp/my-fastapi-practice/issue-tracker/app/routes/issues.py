@@ -11,3 +11,17 @@ def get_issues():
     """Get all issues."""
     issues = load_data()
     return issues
+
+
+@router.get("/{issue_id}", response_model=IssueOut)
+def get_issue(issue_id: str):
+    """
+    Get single issue by ID
+    Raises 404 if issue not found
+    """
+    issues = load_data()
+    for issue in issues:
+        if issue["id"] == issue_id:
+            return issue
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
+                        detail="Issue not found")
