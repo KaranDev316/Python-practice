@@ -25,3 +25,24 @@ def get_issue(issue_id: str):
             return issue
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                         detail="Issue not found")
+
+@router.post("", response_model=IssueOut, status_code=status.HTTP_201_CREATED)
+def create_issue(payload: IssueCreate):
+    """
+    Create new issue
+    The issue is persisted to data/issues.json
+    """
+    issues = load_data()
+
+    issue = {
+        "id": str(uuid.uuid4()),
+        "title": payload.title,
+        "description": payload.description,
+        "priority": payload.priority.value,
+        "status": "open",
+    }
+
+    issues.append(issue)
+    save_data(issues)
+
+    return issue
