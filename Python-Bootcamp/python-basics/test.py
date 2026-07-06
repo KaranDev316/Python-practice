@@ -1,10 +1,16 @@
-from collections import Counter
-strings = ["cat", "dog", "cat", "bird", "dog", "fish"]
+from collections import defaultdict
 
+words = [
+    "apple",
+    "ant",
+    "banana",
+    "boat",
+    "car"
+]
 
+groups = defaultdict(list)
 
-freq = Counter(strings)
+for word in words:
+    groups[word[0]].append(word)
 
-print(freq)
-print(freq["dog"])
-print(freq["bird"])
+print(groups)
