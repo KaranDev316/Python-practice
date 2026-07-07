@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes import notes as notes_router
+from routes.notes import router as notes_router
 
 app = FastAPI(
     title="Notes API",
