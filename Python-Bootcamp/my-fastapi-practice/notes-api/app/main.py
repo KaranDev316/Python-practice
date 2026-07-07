@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from routes import notes as notes_router
 
 app = FastAPI(
     title="Notes API",
@@ -10,3 +11,8 @@ app = FastAPI(
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
+
+
+
+
+app.include_router(notes_router)
