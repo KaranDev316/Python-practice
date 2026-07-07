@@ -13,6 +13,7 @@ def get_issues():
     return issues
 
 
+
 @router.get("/{issue_id}", response_model=IssueOut)
 def get_issue(issue_id: str):
     """
