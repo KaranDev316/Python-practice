@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-DATA_DIR = Path("data")
+DATA_DIR = Path("../data")
 DATA_FILE = DATA_DIR / "issues.json"
 
 
