@@ -12,5 +12,7 @@ class NoteUpdate(BaseModel):
 
 
 class NoteResponse(BaseModel):
+    id: str
     title: str
     body: str
+

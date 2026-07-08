@@ -4,6 +4,12 @@ from app.storage.note_storage import load_data, save_data
 from app.schemas.note import NoteCreate, NoteUpdate, NoteResponse
 router = APIRouter(prefix="/api/v1/notes", tags=["Issues"])
 
+@router.get("", response_model=list[NoteResponse])
+def get_notes():
+    """Get all notes."""
+    notes = load_data()
+    return notes
+
 @router.post("", response_model=NoteResponse, status_code=status.HTTP_201_CREATED)
 def create_note(payload: NoteCreate):
     """
@@ -15,14 +21,14 @@ def create_note(payload: NoteCreate):
     note = {
         "id": str(uuid.uuid4()),
         "title": payload.title,
-        "description": payload.body,
+        "body": payload.body,
 
     }
 
     notes.append(note)
     save_data(notes)
 
-    return notes
+    return note
 
 @router.get("/{note_id}", response_model=NoteResponse, status_code=status.HTTP_200_OK)
 def get_note(note_id: str):
