@@ -14,7 +14,7 @@ def get_notes():
 def create_note(payload: NoteCreate):
     """
     Create new note
-    The issue is persisted to data/issues.json
+    The note is persisted to data/note.json
     """
 
     notes = load_data()
