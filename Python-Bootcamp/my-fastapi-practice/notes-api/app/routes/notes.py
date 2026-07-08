@@ -61,3 +61,19 @@ def update_note(note_id: str, payload: NoteUpdate):
         status_code=status.HTTP_404_NOT_FOUND,
         detail="Note not found"
     )
+
+@router.delete("/{note_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_issue(note_id: str):
+    """Delete an issue by ID."""
+    notes = load_data()
+
+    for i, note in enumerate(notes):
+        if note["id"] == note_id:
+            notes.pop(i)
+            save_data(notes)
+            return
+
+    raise HTTPException(
+        status_code=status.HTTP_404_NOT_FOUND,
+        detail="Note not found"
+    )
