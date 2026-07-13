@@ -7,6 +7,7 @@ seen = {}
 for i, item in enumerate(nums):
     competence = target - item
     if competence in seen:
-        output.append(seen[competence],i)
+        output = [seen[competence],i]
+        break
     seen[item] = i
 print(output)
