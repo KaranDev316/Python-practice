@@ -1,5 +1,5 @@
 from collections import Counter
-arr = [1,2,2,1,1,3]
+arr = [2,2,1,1,3]
 result  = set()
 counts = Counter(arr)
 items = []
@@ -7,6 +7,7 @@ items = []
 for _, item in counts.items():
     result.add(item)
     items.append(item)
+    print(item)
 
 if len(result) == len(items):
     print("Unique items in list")
