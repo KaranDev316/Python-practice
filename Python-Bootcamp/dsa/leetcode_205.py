@@ -1,10 +1,9 @@
 
-s = "egg"
-t = "add"
+s = set("egg")
+t = set("add")
 
 for i in range(len(s)):
     for j in range(len(t)):
-        s[i] = t[j]
+        print(s)
 
-print(s)
-print(t)
+
