@@ -1,12 +1,6 @@
 
-s = dict("egg")
-t = set("add")
-
-print(s)
-print(t)
-
-
-
-print(s)
-
-"""I have no idea on how to solve this problem."""
+s = "egg"
+t = "add"
+s = "f11", t = "b23"
+source_map_1 = dict(zip(s,t))
+print(source_map_1)
