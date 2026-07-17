@@ -1,5 +1,4 @@
-
-
+#37 / 48 testcases passed, unique mapping test failed
 j = "f11"
 k= "b23"
 longest_string = 0
