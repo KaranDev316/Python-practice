@@ -4,7 +4,9 @@ pattern = "abba"
 s = "dog cat cat fish"
 map_pattern_to_s = {}
 map_s_to_pattern = {}
-
+words = s.split()
+if len(words) != len(pattern):
+    print(False)
 for a, b in zip(s.split(), pattern):
 
     if a in map_pattern_to_s:
