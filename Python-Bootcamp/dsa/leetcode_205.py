@@ -4,9 +4,9 @@ j = "f11"
 k= "b23"
 longest_string = 0
 if len(j) > len(k):
-    longest_string = len(j)
+    longest_string = len(set(j))
 else:
-    longest_string = len(k)
+    longest_string = len(set(k))
 
 source_map_2 = dict(zip(j,k))
 if len(source_map_2) == longest_string:
