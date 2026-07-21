@@ -10,3 +10,19 @@ for num in nums:
         sequence.add(num)
 
 print(len(sequence))
+f"""
+  s = set()
+  for num in nums:
+        if num - 1 not in s:
+            next_num = num + 1
+            length = 1
+            
+            while next_num in s:
+                length += 1
+                next_num += 1
+            longest = max(longest, length)
+  return longest
+
+
+
+"""
