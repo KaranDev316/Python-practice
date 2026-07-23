@@ -11,7 +11,7 @@ for num in nums:
 
 print(len(sequence))
 f"""
-  s = set()
+  s = set(nums)
   for num in nums:
         if num - 1 not in s:
             next_num = num + 1
