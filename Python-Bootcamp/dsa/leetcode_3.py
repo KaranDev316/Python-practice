@@ -1,15 +1,16 @@
-s = "abcabcbb"
-set_s = set(s)
-result = []
-length = 0
+s = "abba"
+sett = set()
+longest = 0
+left = 0
+for right in range (len(s)):
+    while s[right] in sett:
+        sett.remove(s[left])
+        left += 1
+    sett.add(s[right])
+    longest = max(longest, right - left + 1)
 
-for i in range (len(s)):
-    left = i + 1
-    right = len(s) - 1
+print(longest)
 
-    if s[i] == s[left]:
-        continue
-    while left < right:
-        length += 1
 
-print(length)
+
+
