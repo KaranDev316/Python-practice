@@ -1,13 +1,13 @@
 import pandas as pd
 
-# Create a simple DataFrame
-data = {
-    "Name": ["Alice", "Bob", "Charlie"],
-    "Age": [25, 30, 35]
-}
+df = pd.read_csv("students.csv")
 
-df = pd.DataFrame(data)
-
-print("Pandas version:", pd.__version__)
-print("\nDataFrame:")
 print(df)
+print("\nFirst two rows:")
+print(df.head(2))
+print("\nLast two rows:")
+print(df.tail(2))
+
+
+print("\nColumn names:")
+print(df.columns)
