@@ -1,17 +1,16 @@
+import pandas as pd
 import matplotlib.pyplot as plt
 
-# Data
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 6, 8, 10]
+data = {
+    "Student": ["Alice", "Bob", "Charlie", "David", "Emma"],
+    "Marks": [78, 92, 65, 88, 95]
+}
 
-# Create the plot
-plt.plot(x, y, marker='o')
-plt.title("My First Matplotlib Graph")
-plt.xlabel("X Values")
-plt.ylabel("Y Values")
-plt.grid(True)
+df = pd.DataFrame(data)
 
-# Display the graph
+print(df)
+
+plt.bar(df["Student"], df["Marks"])
+plt.title("Student Marks")
+plt.ylabel("Marks")
 plt.show()
-
-print("Matplotlib is working!")
